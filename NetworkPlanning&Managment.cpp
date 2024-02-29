@@ -81,7 +81,7 @@ int sourceFind(vector<vector<int>>& matrix)
 		{
 			matrix[0][i + 1] = source[i];
 			for (j = 0; j < N; j++)
-				newMatrix[i + 1, j + 1] = matrix[i, j];
+				newMatrix[i + 1][j + 1] = matrix[i][j];
 		}
 
 		matrix = newMatrix;
